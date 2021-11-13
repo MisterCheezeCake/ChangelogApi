@@ -1,0 +1,9 @@
+{
+    "$schema": "../CTAutocomplete/schema.json",
+    "name": "ChangelogApi2",
+    "creator": "MisterCheezeCake",
+    "description": "API for Changelog Writing. See example.js for an example.",
+    "version": "0.1.0",
+    "entry": "index.js",
+    "isRequired": true
+}
