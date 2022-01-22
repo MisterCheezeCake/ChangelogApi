@@ -1,4 +1,4 @@
-import { Changelog } from "ChangelogAPI2/index.js";
+import { Changelog } from "ChangelogLib/index.js";
 
 
 const changelog = new Changelog(
@@ -18,7 +18,7 @@ changelog.writeChangelog(formater);
 
 // You don't need to use a formatter
 
-import Changelog from "ChangelogApi2/index.js";
+import Changelog from "ChangelogLib/index.js";
 
 const changelog2 =  new Changelog(
     "ExampleModule",

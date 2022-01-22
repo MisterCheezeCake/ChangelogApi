@@ -1,17 +1,21 @@
-# ChangelogApi 2.0.0
+# ChangelogLib - 1.0.0
 
-## What's differant from 1.0
+## Biggest Change
+The module has been renamed to ChangelogLib, to better reflect what it actually does.
 
-This version of ChangelogApi contains numerous improvements over 1.0. These include:
+Because of CT 2.0's new features for Changelogs, this module is designed to offer you more control of how they are shown.
+## What's differant from ChangelogAPI
+
+ChangelogLib contains numerous improvements over ChangelogAPI.  These include:
 
 - More customizability in the message
 - Better tracking of when changelogs have been displayed
 - Essential Notifications rather than chat when availible
 - The Changelog class is now default and named exported
 
-## Migrating from 1.0
+## Migrating from ChangelogAPI
 
-- You will need to require ChangelogApi2 and import the Changelog class from that module
+- You will need to require ChangelogLib and import the Changelog class from that module
 - The `version` in the Changelog object now must be devoid of color codes
     - Formating of how `version` and `module` are displayed can be done with new formatter objects (see below)
 
@@ -28,7 +32,7 @@ Formaters can be passed to the `Changelog#writeChangelog` method
 ## Examples 
 
 ```js
-import { Changelog } from "ChangelogAPI2/index.js";
+import { Changelog } from "ChangelogLib/index.js";
 
 
 const changelog = new Changelog(
@@ -48,7 +52,7 @@ changelog.writeChangelog(formater);
 ```js
 // Without formatter and with default import
 
-import Changelog from "ChangelogApi2/index.js";
+import Changelog from "ChangelogLib/index.js";
 
 const changelog2 =  new Changelog(
     "ExampleModule",
